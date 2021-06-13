@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arvo', serif;
+}
+#header {
+    background: url("https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:400px;
+    display:flex;
+    align-items:center;
+}
+#brand {
+    color:#BA6930;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.7em;
+}
+#linkone {
+    color: #BA6930;
+}
+#linktwo {
+    color: #BA6930;
+}
+#test {
+    margin:0 auto;
+}
+#welcome {
+    color:#111111;
+    margin-bottom: 10px;
+}
+.navbar.scrolled {
+    background: rgb(10, 8, 10);
+    transition: background 2000ms;
+}
+#align {
+    color: wheat;
+    margin-right: 240px;
+}
+#newHere {
+    margin-top:12em;
+    color:#111111;
+}
+#loginhm {
+    margin-bottom: -10em;
+}
+#email {
+    margin-right:15px
+}
+#password {
+    margin-left: 15px;
+}
+#footer {
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#F8F9FA;
+    color: #63707C;
+    text-align: center;
+    
+}
+#contactUs {
+    margin-bottom: 0;
+}
+#design {
+    margin:0;
+}
+#errors {
+    color:red;
+} 

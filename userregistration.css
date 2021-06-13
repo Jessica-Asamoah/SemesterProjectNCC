@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arvo', serif;
+}
+.bg {
+    background-color: #F7FAFC;
+}
+#brandname{
+    text-align: center;
+    margin-top: 20px;
+}
+header h5{
+    text-align: center;
+}
+#uregis {
+    background-color: #FFFFFF;
+    margin:7% auto;
+    width:70%;
+    height:550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid wheat;
+    border-radius: 10%;
+    margin-top: 25px;
+}
+form {
+    margin-top:3em;
+}
+#centre {
+    display: flex;
+    justify-content: center;
+}
+#log {
+    margin-bottom: 3em;
+}
+#footer {
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#F8F9FA;
+    color: #63707C;
+    text-align: center;
+    
+}
+

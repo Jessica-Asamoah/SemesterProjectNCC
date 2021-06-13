@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="kid.css">
+    <title>Sermons</title>
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="homepage.php" class="navbar-brand" id="brand">NEW CREATION CHURCH</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="homepage.php" class="nav-link" id="linkone">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="loginp.php" class="nav-link" id="linktwo">LOGOUT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>VIDEO MATERIALS FOR KIDS</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="https://media.socastsrm.com/wordpress/wp-content/blogs.dir/1050/files/2020/01/read-bible-with-kids.png"
+                        width="100%">
+                    <img src="media/play.png" class="play-btn" onclick="playVideo('media/Jesus.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="https://i.ytimg.com/vi/mQa-GseMSI4/maxresdefault.jpg" width="100%">
+                        <img src="media/play.png" class="play-btn"
+                            onclick="playVideo('media/Where do we find wisdom.mp4')">
+                    </div>
+                    <p>David and Goliath - 16/05/21</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="https://www.divinerevelations.info/kids/ogimage.png" width="100%">
+                        <img src="media/play.png" class="play-btn" onclick="playVideo('media/encounter.mp4')">
+                    </div>
+                    <p>JESUS - 09/05/21</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="https://i.ytimg.com/vi/90EBdps0VNc/maxresdefault.jpg" width="100%">
+                        <img src="media/play.png" class="play-btn" onclick="playVideo('media/money.mp4')">
+                    </div>
+                    <p>King David - 02/05/21</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls id="myVideo">
+            <source src="media/Jesus.mp4" type="video/mp4">
+        </video>
+        <img src="media/close.png" class="close-btn" onclick="stopVideo()" onClick="stopAudio">
+    </div>
+
+    <section id="footer">
+        <p id="contactUs">
+            Call us on: 030-234-0983/030-456-8675
+        </p>
+        E-mail: newcreationchurch@gmail.com
+        <p id="design">Designed and built with all the love in the world by Jessica Asamoah</p>
+    </section>
+
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo() {
+            videoPlayer.style.display = "none";
+        }
+
+        function playVideo(file) {
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
